@@ -1,0 +1,180 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container to center the content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+.header {
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav ul li {
+    margin-left: 2rem;
+}
+
+.header .nav ul li a {
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Section styles */
+.section {
+    padding: 4rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Flex container for skills and projects lists */
+.skills-projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensure items wrap to the next line */
+}
+
+.skills-list, .projects-list {
+    list-style: none;
+    padding: 0;
+    width: 45%;
+    margin-bottom: 2rem; /* Spacing between lists */
+}
+
+.skills-list li, .projects-list li {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list a, .projects-list a {
+    color: #000000;
+}
+
+.skills-list li:hover, .projects-list li:hover {
+    background: #e6e6e6;
+    transform: translateY(-5px);
+}
+
+/* Card-like structure for additional images */
+.additional-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 1000px; /* Set maximum width for responsiveness */
+    margin-bottom: 2rem; /* Spacing between cards */
+}
+
+.card img {
+    width: 100%; /* Ensure the image fills the card */
+    max-width: 100%; /* Ensure the image does not exceed card width */
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
